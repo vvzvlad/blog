@@ -12,20 +12,13 @@ avatar: /images/avatar.jpg
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
   email: vvzvlad@gmail.com
   facebook: vvzvlad
-  flickr:
   github: vvzvlad
   instagram: vvz_vlad
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
+  rss: /rss
   twitter: vvzvlad
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: vvzvlad
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
 
 disqus:
 
