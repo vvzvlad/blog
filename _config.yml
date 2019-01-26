@@ -68,5 +68,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - blog.code-workspace
 
 theme: jekyll-theme-dinky
