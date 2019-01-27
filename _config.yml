@@ -3,25 +3,25 @@ highlighter: rouge
 permalink: /:categories/:title.html 
 excerpt_separator: "<!-- more -->"
 
-github: panxw
-author: "panxw"
-email: winfirm#163.com
-name: "Panxw's Blog"
+github: vvzvlad
+author: "vvzvlad"
+email: vvzvlad@gmail.com
+name: "vvzvlad"
 baseurl: /
-url: http://www.panxw.com
-domain: www.panxw.com
+url: http://vvzvlad.xyz
+domain: vvzvlad.xyz
 
 all_categories: [
-  ["android", "Android开发","/android/index.html"], 
+  ["android", "Android","/android/index.html"], 
   ["react", "React Native", "/react/index.html"],
-  ["web", "Web建站","/web/index.html"], 
-  ["linux", "Linux相关","/linux/index.html"],
-  ["git", "git用法","/git/index.html"],
-  ["program", "软件开发","/program/index.html"],
+  ["web", "Web","/web/index.html"], 
+  ["linux", "linux","/linux/index.html"],
+  ["git", "git","/git/index.html"],
+  ["program", "program","/program/index.html"],
   ["vps", "VPS","/vps/index.html"],
-  ["other", "杂记","/other/index.html"],
-  ["read", "书摘","/read/index.html"], 
-  ["about", "关于","/about.html"]
+  ["other", "other","/other/index.html"],
+  ["read", "read","/read/index.html"], 
+  ["about", "about","/about.html"]
 ]
 
 paginate: 10 
@@ -31,9 +31,6 @@ index_layout: "index.html"
 category_layout: "_layouts/category.html"
 tag_layout: "_layouts/tag.html"
 
-#不使用gems库中的jekyll-paginate-category
-#使用基于jekyll-paginate改写的的栏目分页插件，所以jekyll-paginate还需要用上。
-#gems: [jekyll-paginate,jekyll-paginate-category]
 gems: [jekyll-paginate]
 
 collections:
@@ -41,4 +38,3 @@ collections:
     output: true
 
 copyright: []
-#timezone: Asia/Shanghai
