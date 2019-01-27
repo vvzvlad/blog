@@ -1,40 +1,51 @@
-markdown: kramdown
-highlighter: rouge
-permalink: /:categories/:title.html 
-excerpt_separator: "<!-- more -->"
+#
+# This file contains configuration flags to customize your site
+#
 
-github: vvzvlad
-author: "vvzvlad"
-email: vvzvlad@gmail.com
-name: "vvzvlad"
-baseurl: /
+name: vvzvlad
+description: Здравствуйте, эта хуйня с моих слов записана верно
+avatar: /images/avatar.jpg
+
+footer-links:
+  email: vvzvlad@gmail.com
+  facebook: vvzvlad
+  github: vvzvlad
+  instagram: vvz_vlad
+  rss: /rss
+  twitter: vvzvlad
+  youtube: vvzvlad
+
+disqus:
+
+analytics: "52086789"
+
 url: http://vvzvlad.xyz
-domain: vvzvlad.xyz
+baseurl: ""
+permalink: /:title/
+version: v1.2.0
 
-all_categories: [
-  ["android", "Android","/android/index.html"], 
-  ["react", "React Native", "/react/index.html"],
-  ["web", "Web","/web/index.html"], 
-  ["linux", "linux","/linux/index.html"],
-  ["git", "git","/git/index.html"],
-  ["program", "program","/program/index.html"],
-  ["vps", "VPS","/vps/index.html"],
-  ["other", "other","/other/index.html"],
-  ["read", "read","/read/index.html"], 
-  ["about", "about","/about.html"]
-]
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+sass:
+  style: :expanded # You might prefer to minify using :compressed
 
-paginate: 10 
-paginate_path: "index_:num"
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
-index_layout: "index.html"
-category_layout: "_layouts/category.html"
-tag_layout: "_layouts/tag.html"
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - blog.code-workspace
 
-gems: [jekyll-paginate]
-
-collections:
-  docs:
-    output: true
-
-copyright: []
+theme: jekyll-theme-dinky
