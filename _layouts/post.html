@@ -1,6 +1,6 @@
---- 
-layout: default 
---- 
+---
+layout: default
+---
 {% for cat in site.all_categories %}{% if page.category == cat[0] %}{% assign category_name = cat[1] %}{% assign category_link = cat[2] %}{% endif %}{% endfor %}
 {% assign category_posts=site.categories[page.category] %}{% assign prevpost = nil %}{% assign nextpost = nil %}{% assign found = false %}
 {% for post in category_posts %}{% if found==true %}{% assign prevpost = post %}{% break %}{% endif %}{% if page.url==post.url %}{% assign found = true %}{% endif %}{% if found==false %}{% assign nextpost = post %}{% endif %}{% endfor %}
@@ -34,10 +34,6 @@ layout: default
 	</div>
 </div>
 
-<!-- adsense_468x60 -->
-<div style="text-align:center;margin-top:15px">
-	 {% include adsense_468x60.html %} 
-</div>
 <br/>
 
 <!-- content -->
@@ -80,9 +76,9 @@ layout: default
 			<a href="{{category_link}}">
 				{{category_name}}
 			</a>
-		{%endif%} 
+		{%endif%}
   </span>
-  
+
   <div style="float:right">
   <span class="prev" >
 		{% if nextpost %}
@@ -97,13 +93,13 @@ layout: default
 		{%endif%}
   </span>
   </div>
-  
+
 </div>
 
 <hr>
 <!-- Blog Comments -->
 <div class="media">
-  {% include comment.html %} 
+  {% include comment.html %}
 </div>
 
 </div>
