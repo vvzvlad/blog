@@ -1,51 +1,44 @@
-#
-# This file contains configuration flags to customize your site
-#
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title.html 
+excerpt_separator: "<!-- more -->"
 
-name: vvzvlad
-description: Здравствуйте, эта хуйня с моих слов записана верно
-avatar: /images/avatar.jpg
+github: panxw
+author: "panxw"
+email: winfirm#163.com
+name: "Panxw's Blog"
+baseurl: /
+url: http://www.panxw.com
+domain: www.panxw.com
 
-footer-links:
-  email: vvzvlad@gmail.com
-  facebook: vvzvlad
-  github: vvzvlad
-  instagram: vvz_vlad
-  rss: /rss
-  twitter: vvzvlad
-  youtube: vvzvlad
+all_categories: [
+  ["android", "Android开发","/android/index.html"], 
+  ["react", "React Native", "/react/index.html"],
+  ["web", "Web建站","/web/index.html"], 
+  ["linux", "Linux相关","/linux/index.html"],
+  ["git", "git用法","/git/index.html"],
+  ["program", "软件开发","/program/index.html"],
+  ["vps", "VPS","/vps/index.html"],
+  ["other", "杂记","/other/index.html"],
+  ["read", "书摘","/read/index.html"], 
+  ["about", "关于","/about.html"]
+]
 
-disqus:
+paginate: 10 
+paginate_path: "index_:num"
 
-analytics: "52086789"
+index_layout: "index.html"
+category_layout: "_layouts/category.html"
+tag_layout: "_layouts/tag.html"
 
-url: http://vvzvlad.xyz
-baseurl: ""
-permalink: /:title/
-version: v1.2.0
+#不使用gems库中的jekyll-paginate-category
+#使用基于jekyll-paginate改写的的栏目分页插件，所以jekyll-paginate还需要用上。
+#gems: [jekyll-paginate,jekyll-paginate-category]
+gems: [jekyll-paginate]
 
-# Jekyll 3 now only supports Kramdown for Markdown
-kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
-  input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
-sass:
-  style: :expanded # You might prefer to minify using :compressed
+collections:
+  docs:
+    output: true
 
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
-  - blog.code-workspace
-
-theme: jekyll-theme-dinky
+copyright: []
+#timezone: Asia/Shanghai
