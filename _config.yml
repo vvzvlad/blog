@@ -20,7 +20,7 @@ comments: false
 analytics: "52086789"
 
 url: http://vvzvlad.xyz
-baseurl: "/about/"
+baseurl: ""
 permalink: /:title/
 version: v1.2.0
 
