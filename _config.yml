@@ -15,12 +15,12 @@ footer-links:
   twitter: vvzvlad
   youtube: vvzvlad
 
-comments: true
+comments: false
 
 analytics: "52086789"
 
 url: http://vvzvlad.xyz
-baseurl: ""
+baseurl: "/about/"
 permalink: /:title/
 version: v1.2.0
 

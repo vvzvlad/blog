@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /
+permalink: /about/
 ---
 
 Практически в любой соцсети меня можно найти по нику vvzvlad.
