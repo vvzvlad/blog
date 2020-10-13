@@ -1,15 +1,23 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /
 ---
 
-Some information about you!
+Практически в любой соцсети меня можно найти по нику vvzvlad.
 
-### More Information
+### Соцсети
 
-A place to include any other types of information that you'd like to include about yourself.
+https://vk.com/vvzvlad
+https://www.facebook.com/vvzvlad
+https://www.instagram.com/vvz_vlad/
+https://twitter.com/vvzvlad
+ 
+И так далее
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Ну, и конечно, вы можете написать мне письмо
+[noreply@vvzvlad.xyz](mailto:noreply@vvzvlad.xyz)
+
+Или написать в телеграм: @vvzvlad
